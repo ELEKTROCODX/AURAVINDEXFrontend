@@ -1,0 +1,38 @@
+@import url("./config.css");
+
+.admin-nav {
+    width: 15vw;
+    background: var(--color-black);
+    color: white;
+    padding: 2em;
+    padding-top: 6em;
+    height: 100vh;
+}
+
+.admin-nav-title {
+    font-size: var(--font-size-xlarge);
+    margin-bottom: 1em;
+}
+
+.admin-nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.admin-nav-list li {
+    padding: 1em;
+    cursor: pointer;
+}
+
+.admin-nav-list li:hover {
+    border-radius: 10px;
+    background-color: var(--color-orange);
+}
+
+@media (max-width: 768px) {
+    .admin-nav {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+}

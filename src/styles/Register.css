@@ -1,0 +1,92 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-white);
+}
+
+.input {
+    height: 2em;
+}
+
+.register-card {
+    margin: 6em 0;
+    width: 100%;
+    max-width: 30vw;
+    padding: 20px;
+    border: 1px solid var(--color-gray);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.register-title {
+    font-size: var(--font-size-xlarge);
+    color: var(--color-purple);
+    margin-bottom: 10px;
+}
+
+.register-subtitle {
+    font-size: var(--font-size-medium);
+    color: var(--color-black);
+    margin-bottom: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: var(--font-size-small);
+    color: var(--color-black);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+    font-size: var(--font-size-small);
+    height: 2em;
+}
+
+.input-group select {
+    padding: 8px;
+    width: 29.51vw;
+    border: 1px solid var(--color-gray);
+    border-radius: 4px;
+    font-size: var(--font-size-small);
+    height: 3em;
+}
+
+.register-links {
+    margin-top: 15px;
+}
+
+.register-links a {
+    font-size: var(--font-size-small);
+    color: var(--color-purple);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register-links a:hover {
+    color: var(--color-orange);
+}
+
+@media (max-width: 900px) {
+    .register-card {
+        margin: 8em 0;
+        min-width: 80vw;
+    }
+}

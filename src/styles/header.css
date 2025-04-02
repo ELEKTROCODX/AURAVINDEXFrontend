@@ -1,0 +1,30 @@
+header{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+    
+}
+
+.header-nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.button-nav{
+    display: flex;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}

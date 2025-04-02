@@ -1,0 +1,66 @@
+@import url("./config.css");
+
+.about-us-container {
+    margin: 0 auto;
+    color: var(--color-black);
+    padding: 0 5em;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--color-gray);
+    transition: transform 0.3s ease;
+    width: 33vw;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.content h3 {
+    color: var(--color-purple);
+    font-size: var(--font-size-medium);
+}
+
+.content h4 {
+    font-size: var(--font-size-small);
+    color: var(--color-black);
+    margin-bottom: 0.5em;
+}
+
+.content p {
+    line-height: 1.4;
+    font-size: var(--font-size-small);
+    color: var(--color-black);
+}
+
+@media (max-width: 1000px) {
+    .team {
+    flex-direction: column;
+    }
+    .team-member {
+    width: 80vw;
+    }
+}

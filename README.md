@@ -1,0 +1,1 @@
+Frontend de proyecto Aura Vindex
