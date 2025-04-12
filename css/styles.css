@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Rubik:wght@400;500&display=swap');
+
+:root {
+  --dark: #222222;
+  --aura: #6A0DAD;
+  --vindex: #FF6600;
+  --gray: #DDD3D4;
+  --blank: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--blank);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.site-header {
+  background-color: var(--aura);
+  color: var(--blank);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+}
+
+main h2 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--aura);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--vindex);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background-color: var(--dark);
+  color: var(--blank);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+strong {
+    color: var(--vindex);
+}
+
+li {
+	margin: 0;
+	padding: 2px 0 2px 36px;
+	list-style: none;
+	background-image: url("../imgs/5.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
+}
