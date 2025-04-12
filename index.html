@@ -1,13 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/img/favi.png" type="image/png">
-    <title>AuraVindex</title>
+    <title>AURA VINDEX</title>
+    <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- Header -->
+    <header id="main_header">
+      <div id="top_header">
+        <!-- Title -->
+        <h1 id="header_title">
+          <a href="#"
+            ><img src="./imgs/6.png" alt="" style="max-width: 75px"
+          /></a>
+        </h1>
+        <!-- Nav button -->
+        <i class="nav_icon fa-solid fa-bars" onclick="toggleNavigation()"></i>
+      </div>
+      <!-- Navigation -->
+      <!-- <nav class="header_nav" id="main_navigation">
+        <ul class="header_nav_ul">
+          <li><a href="./index.html" class="nav_a nav_active">Home</a></li>
+          <li><a href="#" class="default_button">Download app</a></li>
+        </ul>
+      </nav> -->
+    </header>
+    <div class="container">
+      <div class="main_wrapper">
+        <!-- Banner -->
+        <div class="main_banner">
+          <img src="./imgs/1.png" alt="" style="max-width: 250px" />
+          <p>Website in development. Coming soon...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="main_footer">
+      <ul class="footer_links">
+        <li><a href="./about/">About Us</a></li>
+        <li><a href="./tos/">Terms of Service</a></li>
+        <li><a href="./privacy/">Privacy policy</a></li>
+      </ul>
+      <!-- Legal -->
+      <ul class="footer_legal">
+        <li>&copy; AURA VINDEX. All rights reserved.</li>
+      </ul>
+    </footer>
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
   </body>
 </html>

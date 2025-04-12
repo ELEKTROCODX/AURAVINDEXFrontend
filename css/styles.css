@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Rubik:wght@400;500&display=swap');
+
+:root {
+  --dark: #222222;
+  --aura: #6A0DAD;
+  --vindex: #FF6600;
+  --gray: #DDD3D4;
+  --blank: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--blank);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.site-header {
+  background-color: var(--aura);
+  color: var(--blank);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+}
+
+main h2 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--aura);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--vindex);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  background-color: var(--dark);
+  color: var(--blank);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+strong {
+    color: var(--vindex);
+}
+
+li {
+	margin: 0;
+	padding: 2px 0 2px 36px;
+	list-style: none;
+	background-image: url("../imgs/5.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.team_member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--gray);
+    transition: transform 0.3s ease;
+    width: 33vw;
+}
+
+.team_member:hover {
+    transform: scale(1.05);
+}
+
+.team_member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.content h3 {
+    color: var(--aura);
+    font-size: 16px;
+}
+
+.content h4 {
+    font-size: 14px;
+    color: var(--dark);
+    margin-bottom: 0.5em;
+}
+
+.content p {
+    line-height: 1.4;
+    font-size: 14px;
+    color: var(--dark);
+}
+
+@media (max-width: 1000px) {
+    .team {
+    flex-direction: column;
+    }
+    .team_member {
+    width: 80vw;
+    }
+}
